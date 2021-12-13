@@ -1,0 +1,20 @@
+@echo off
+echo // MAKEHELP.BAT generated Help Map file.  >hlp\"FRSHELL.hm"
+echo. >>hlp\"FRSHELL.hm"
+echo // Commands (ID_* and IDM_*) >>hlp\"FRSHELL.hm"
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h >>hlp\"FRSHELL.hm"
+echo. >>hlp\"FRSHELL.hm"
+echo // Prompts (IDP_*) >>hlp\"FRSHELL.hm"
+makehm IDP_,HIDP_,0x30000 resource.h >>hlp\"FRSHELL.hm"
+echo. >>hlp\"FRSHELL.hm"
+echo // Resources (IDR_*) >>hlp\"FRSHELL.hm"
+makehm IDR_,HIDR_,0x20000 resource.h >>hlp\"FRSHELL.hm"
+echo. >>hlp\"FRSHELL.hm"
+echo // Dialogs (IDD_*) >>hlp\"FRSHELL.hm"
+makehm IDD_,HIDD_,0x20000 resource.h >>hlp\"FRSHELL.hm"
+echo. >>hlp\"FRSHELL.hm"
+echo // Frame Controls (IDW_*) >>hlp\"FRSHELL.hm"
+makehm IDW_,HIDW_,0x50000 resource.h >>hlp\"FRSHELL.hm"
+REM -- Make help for project 
+call hc31 "FRSHELL.hpj"
+echo.

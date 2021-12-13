@@ -1,0 +1,44 @@
+/*
+ *FRSHELL.odl
+*/
+
+[
+	uuid(0CB56521-94CF-11D0-B2D0-B211D3868BBF),
+	version(1.0)
+]
+
+library CFR3dDocLibrary
+{
+	importlib("stdole32.tlb");
+
+	//{{AFX_ODL_CLASS
+
+	[
+		uuid(0CB56522-94CF-11D0-B2D0-B211D3868BBF),
+	]
+	dispinterface CFR3dDoc
+	{
+		properties:
+		//	NOTE -  ClassExpress will overwrite property information here.
+		//			Do not edit this section.
+		//{{AFX_ODL_PROP(CFR3dDoc)
+		//}}AFX_ODL_PROP
+
+		methods:
+		//	NOTE -  ClassExpress will maintain method information here.
+		//			Do not edit this section.
+		//{{AFX_ODL_METHOD(CFR3dDoc)
+		//}}AFX_ODL_METHOD
+
+	}
+
+	//}}AFX_ODL_CLASS
+
+	[
+		uuid(0CB56523-94CF-11D0-B2D0-B211D3868BBF),
+	]
+	coclass _CFR3dDoc
+	{
+		dispinterface CFR3dDoc;
+	}
+}

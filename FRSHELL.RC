@@ -1,0 +1,337 @@
+// Symantec AppExpress generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#include ""res\\FRSHELL.rc2""  // non-App Studio edited resources\r\n"
+    "\r\n"
+    "#include ""afxres.rc""  // Standard components\r\n"
+    "#include ""afxprint.rc""  // printing/print preview resources\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\FRSHELL.ico"
+IDR_MDIDOCTYPE          ICON    DISCARDABLE     "res\\frshedoc.ico"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\toolbar.bmp"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME   MENUEX MOVEABLE PURE PRELOAD DISCARDABLE
+BEGIN
+    POPUP "&File", , , 0
+    BEGIN
+        MENUITEM "&New\tCtrl+N", ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O", ID_FILE_OPEN
+        MENUITEM "", , 0x0800 /*MFT_SEPARATOR*/
+        MENUITEM "P&rint Setup...", ID_FILE_PRINT_SETUP
+        MENUITEM "", , 0x0800 /*MFT_SEPARATOR*/
+        MENUITEM "Recent File", ID_FILE_MRU_FILE1, , 0x0001 /*MF_GRAYED*/
+        MENUITEM "", , 0x0800 /*MFT_SEPARATOR*/
+        MENUITEM "E&xit", ID_APP_EXIT
+    END
+    POPUP "&View", , , 0
+    BEGIN
+        MENUITEM "&Toolbar", ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar", ID_VIEW_STATUS_BAR
+    END
+    POPUP "Fractal Models", , , 0
+    BEGIN
+        MENUITEM "&Initial Conditions\tCtrl+I", ID_FrMod_InCnd
+        MENUITEM "&Directory for files", ID_PathDlg
+        MENUITEM "&Settings...", IDM_ITEM2
+    END
+    POPUP "&Help", , , 0
+    BEGIN
+        MENUITEM "&Index", ID_HELP_INDEX
+        MENUITEM "&Using Help", ID_HELP_USING
+        MENUITEM "", , 0x0800 /*MFT_SEPARATOR*/
+        MENUITEM "&About FRSHELL...", ID_APP_ABOUT
+    END
+END
+
+
+IDR_MDIDOCTYPE	MENUEX MOVEABLE IMPURE LOADONCALL DISCARDABLE
+BEGIN
+    POPUP "&File", , , 0
+    BEGIN
+        MENUITEM "&New\tCtrl+N", ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O", ID_FILE_OPEN
+        MENUITEM "&Close", ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S", ID_FILE_SAVE
+        MENUITEM "Save &As...", ID_FILE_SAVE_AS
+        MENUITEM "", , 0x0800 /*MFT_SEPARATOR*/
+        MENUITEM "&Print...\tCtrl+P", ID_FILE_PRINT
+        MENUITEM "Print Pre&view", ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...", ID_FILE_PRINT_SETUP
+        MENUITEM "", , 0x0800 /*MFT_SEPARATOR*/
+        MENUITEM "Recent File", ID_FILE_MRU_FILE1, , 0x0001 /*MF_GRAYED*/
+        MENUITEM "", , 0x0800 /*MFT_SEPARATOR*/
+        MENUITEM "E&xit", ID_APP_EXIT
+    END
+    POPUP "&View", , , 0
+    BEGIN
+        MENUITEM "&Toolbar", ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar", ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Fractal Models", , , 0
+    BEGIN
+        MENUITEM "&Initial Conditions\tCtrl+I", ID_FrMod_InCnd
+        MENUITEM "&Directory for files", ID_PathDlg
+        MENUITEM "&Settings...", IDM_ITEM2
+    END
+    POPUP "&Window", , , 0
+    BEGIN
+        MENUITEM "&New Window", ID_WINDOW_NEW
+        MENUITEM "&Cascade", ID_WINDOW_CASCADE
+        MENUITEM "&Tile", ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons", ID_WINDOW_ARRANGE
+    END
+END
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME	ACCELERATORS MOVEABLE IMPURE LOADONCALL DISCARDABLE
+BEGIN
+	"N",	ID_FILE_NEW,	VIRTKEY,	CONTROL
+	"O",	ID_FILE_OPEN,	VIRTKEY,	CONTROL
+	"S",	ID_FILE_SAVE,	VIRTKEY,	CONTROL
+	"P",	ID_FILE_PRINT,	VIRTKEY,	CONTROL
+	"Z",	ID_EDIT_UNDO,	VIRTKEY,	CONTROL
+	"X",	ID_EDIT_CUT,	VIRTKEY,	CONTROL
+	"C",	ID_EDIT_COPY,	VIRTKEY,	CONTROL
+	"V",	ID_EDIT_PASTE,	VIRTKEY,	CONTROL
+	VK_BACK,	ID_EDIT_UNDO,	VIRTKEY,	ALT
+	VK_DELETE,	ID_EDIT_CUT,	VIRTKEY,	SHIFT
+	VK_INSERT,	ID_EDIT_COPY,	VIRTKEY,	CONTROL
+	VK_INSERT,	ID_EDIT_PASTE,	VIRTKEY,	SHIFT
+	VK_F6,	ID_NEXT_PANE,	VIRTKEY
+	VK_F6,	ID_PREV_PANE,	VIRTKEY,	SHIFT
+	VK_F1,	ID_CONTEXT_HELP,	VIRTKEY,	SHIFT
+	VK_F1,	ID_HELP,	VIRTKEY
+	"I",	ID_FrMod_InCnd,	VIRTKEY,	CONTROL
+END
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX MOVEABLE IMPURE LOADONCALL DISCARDABLE	34, 22, 233, 55, 0
+STYLE DS_MODALFRAME | 0x0004 | WS_CAPTION | WS_POPUP
+CAPTION "About FRSHELL "
+FONT 8, "MS Sans Serif", 700, 0 /*FALSE*/
+BEGIN
+	ICON	IDR_MAINFRAME, IDC_STATIC	11,17,18,20, , 0
+    LTEXT           "FRSHELL Version 1.0", IDC_STATIC, 	39,11,106,8, SS_LEFT, , 0
+    LTEXT           "Copyright \251 POWER Scintific, 1997.\rAll Rights Reserved.", IDC_STATIC, 	39,22,135,18, SS_LEFT, , 0
+    DEFPUSHBUTTON   "OK", IDOK, 	188,6,40,14, WS_GROUP, , 0
+END
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE MOVEABLE PURE PRELOAD DISCARDABLE
+BEGIN
+    IDR_MAINFRAME,      "FRSHELL"
+    IDR_MDIDOCTYPE,     "\nFractal\nDocFound\nFilterName (*.mod)\n.mod\n RegFileTypeId\nRegFileTypeName"
+    AFX_IDS_APP_TITLE,  "FRSHELL "
+    AFX_IDS_IDLEMESSAGE,        "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE,    "Select an object on which to get Help"
+    ID_FILE_NEW,        "Create a new document\nNew"
+    ID_FILE_OPEN,       "Open an existing document\nOpen"
+    ID_FILE_CLOSE,      "Close the active document"
+    ID_FILE_SAVE,       "Save the active document\nSave"
+    ID_FILE_SAVE_AS,    "Save the active document with a new name"
+    ID_FILE_PAGE_SETUP, "Change the printing options"
+    ID_FILE_PRINT_SETUP,        "Change the printer and printing options"
+    ID_FILE_PRINT,      "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW,      "Display full pages"
+    ID_FILE_MRU_FILE1,  "Open this document"
+    ID_FILE_MRU_FILE2,  "Open this document"
+    ID_FILE_MRU_FILE3,  "Open this document"
+    ID_FILE_MRU_FILE4,  "Open this document"
+    ID_EDIT_CLEAR,      "Erase the selection"
+    ID_EDIT_CLEAR_ALL,  "Erase everything"
+    ID_EDIT_COPY,       "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT,        "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND,       "Find the specified text"
+    ID_EDIT_PASTE,      "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT,     "Repeat the last action"
+    ID_EDIT_REPLACE,    "Replace specific text with different text"
+    ID_EDIT_SELECT_ALL, "Select the entire document"
+    ID_EDIT_UNDO,       "Undo the last action"
+    ID_EDIT_REDO,       "Redo the previously undone action"
+    ID_WINDOW_NEW,      "Open another window for the active document"
+    ID_WINDOW_ARRANGE,  "Arrange icons at the bottom of the window"
+    ID_WINDOW_CASCADE,  "Arrange windows so they overlap"
+    ID_WINDOW_TILE_HORZ,        "Arrange windows as non-overlapping tiles"
+    ID_WINDOW_TILE_VERT,        "Arrange windows as non-overlapping tiles"
+    ID_WINDOW_SPLIT,    "Split the active window into panes"
+    ID_APP_ABOUT,       "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT,        "Quit the application; prompts to save documents"
+    ID_HELP_INDEX,      "List Help topics"
+    ID_HELP_USING,      "Display instructions about how to use help"
+    ID_CONTEXT_HELP,    "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP,    "Display help for current task or command"
+    ID_NEXT_PANE,       "Switch to the next window pane"
+    ID_PREV_PANE,       "Switch back to the previous window pane"
+    ID_INDICATOR_EXT,   "EXT"
+    ID_INDICATOR_CAPS,  "CAP"
+    ID_INDICATOR_NUM,   "NUM"
+    ID_INDICATOR_SCRL,  "SCRL"
+    ID_INDICATOR_OVR,   "OVR"
+    ID_INDICATOR_REC,   "REC"
+    ID_VIEW_TOOLBAR,    "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR, "Show or hide the status bar"
+    AFX_IDS_SCSIZE,     "Change the window size"
+    AFX_IDS_SCMOVE,     "Change the window position"
+    AFX_IDS_SCMINIMIZE, "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE, "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW,       "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW,       "Switch to the previous document window"
+    AFX_IDS_SCCLOSE,    "Close the active window and prompts to save the documents"
+    AFX_IDS_SCRESTORE,  "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST, "Activate Task List"
+    AFX_IDS_MDICHILD,   "Activate this window"
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "res\\FRSHELL.rc2"  // non-App Studio edited resources
+
+#include "afxres.rc"  // Standard components
+#include "afxprint.rc"  // printing/print preview resources
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+IDD_FrModInCnd DIALOGEX MOVEABLE IMPURE LOADONCALL DISCARDABLE	120, 40, 157, 175, 0
+STYLE DS_MODALFRAME | 0x0004 | WS_CAPTION | WS_POPUP
+CAPTION "Initial Conditions"
+FONT 8, "MS Sans Serif", 700, 0 /*FALSE*/
+BEGIN
+    EDITTEXT        3000, 	84,22,35,13, ES_LEFT, , 0
+    EDITTEXT        3002, 	84,42,35,13, ES_LEFT, , 0
+    CONTROL         "Number of Particles ", 65535, "Static", SS_LEFT, 	15,24,68,12, , 0
+    CONTROL         "Step On Time", 65535, "Static", SS_LEFT, 	15,44,68,14, , 0
+    CONTROL         "Max Charge", 65535, "Static", SS_LEFT, 	15,128,65,12, , 0
+    CONTROL         "Average Distance", 65535, "Static", SS_LEFT, 	15,106,68,14, , 0
+    CONTROL         "Max Size of Particle", 65535, "Static", SS_LEFT, 	15,86,68,12, , 0
+    CONTROL         "Min Size of Particle", 65535, "Static", SS_LEFT, 	15,66,68,12, , 0
+    EDITTEXT        3006, 	84,64,35,13, ES_LEFT, , 0
+    EDITTEXT        3004, 	84,84,35,13, ES_LEFT, , 0
+    EDITTEXT        3005, 	84,106,35,13, ES_LEFT, , 0
+    LTEXT           "w/d", 65535, 	126,20,18,12, SS_LEFT, , 0
+    LTEXT           "c", 65535, 	126,42,18,12, SS_LEFT, , 0
+    LTEXT           "cm", 65535, 	126,64,18,12, SS_LEFT, , 0
+    LTEXT           "cm", 65535, 	126,86,18,12, SS_LEFT, , 0
+    LTEXT           "cm", 65535, 	126,106,18,12, SS_LEFT, , 0
+    LTEXT           "Q", 65535, 	126,129,18,12, SS_LEFT, , 0
+    EDITTEXT        3003, 	84,127,35,13, ES_LEFT, , 0
+    PUSHBUTTON      "OK", 1, 	13,156,50,14, 0, , 0
+    PUSHBUTTON      "Cancel", 2, 	95,156,50,14, 0, , 0
+    GROUPBOX        "", 65535, 	7,9,144,141, 0, , 0
+    LTEXT           "Text", IDC_STATIC, 	55,140,40,8, SS_LEFT, , 0
+END
+
+
+
+
+
+
+
+
+IDD_PATH DIALOGEX MOVEABLE IMPURE LOADONCALL DISCARDABLE	140, 60, 141, 68, 0
+STYLE DS_MODALFRAME | 0x0004 | WS_CAPTION | WS_SYSMENU | WS_VISIBLE | WS_POPUP
+CAPTION "Path to files"
+FONT 8, "MS Sans Serif", 700, 0 /*FALSE*/
+BEGIN
+    PUSHBUTTON      "OK", IDOK, 	9,45,49,14, 0, , 0
+    PUSHBUTTON      "Cancel", IDCANCEL, 	80,45,50,14, 0, , 0
+    EDITTEXT        IDC_EDIT1, 	70,14,54,14, ES_AUTOHSCROLL | ES_LEFT, , 0
+    LTEXT           "Path to .*mod file", IDC_STATIC, 	9,16,59,14, SS_LEFT, , 0
+END
+

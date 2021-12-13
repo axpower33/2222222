@@ -1,0 +1,82 @@
+# Symantec SC++ generated .dpd file. V: 7200
+.\stdafx.SYM: \
+	stdafx.h \
+	C:\SC\BIN\..\INCLUDE\win32\pshpack1.h \
+	C:\SC\BIN\..\INCLUDE\win32\poppack.h 
+mainfrm.OBJ: \
+	mainfrm.cpp \
+	FRSHELL.h \
+	resource.h \
+	cfrmodin.h \
+	cpathdia.h \
+	mainfrm.h 
+fr3ddoc.OBJ: \
+	fr3ddoc.cpp \
+	stdafx.h \
+	C:\SC\BIN\..\INCLUDE\win32\pshpack1.h \
+	C:\SC\BIN\..\INCLUDE\win32\poppack.h \
+	FRSHELL.h \
+	resource.h \
+	cfrmodin.h \
+	cpathdia.h \
+	fr3ddoc.h 
+frshell.OBJ: \
+	frshell.cpp \
+	stdafx.h \
+	C:\SC\BIN\..\INCLUDE\win32\pshpack1.h \
+	C:\SC\BIN\..\INCLUDE\win32\poppack.h \
+	FRSHELL.h \
+	resource.h \
+	cfrmodin.h \
+	cpathdia.h \
+	mainfrm.h \
+	fr3ddoc.h \
+	fr3dvw.h 
+fr3dvw.OBJ: \
+	fr3dvw.cpp \
+	FRSHELL.h \
+	resource.h \
+	cfrmodin.h \
+	cpathdia.h \
+	fr3ddoc.h \
+	fr3dvw.h 
+cfrmodin.OBJ: \
+	cfrmodin.cpp \
+	FRSHELL.h \
+	resource.h \
+	cfrmodin.h \
+	cpathdia.h 
+cpathdia.OBJ: \
+	cpathdia.cpp \
+	frshell.h \
+	resource.h \
+	cfrmodin.h \
+	cpathdia.h 
+frshell.RES: \
+	frshell.rc \
+	resource.h \
+	C:\SC\BIN\..\MFC\INCLUDE\afxres.h \
+	C:\SC\BIN\..\MFC\INCLUDE\mfc30\afxres.h \
+	C:\SC\BIN\..\MFC\INCLUDE\mfc30\winres.h \
+	res\FRSHELL.ico \
+	res\frshedoc.ico \
+	res\toolbar.bmp \
+	res\\FRSHELL.rc2 \
+	C:\SC\BIN\..\INCLUDE\ver.h \
+	C:\SC\BIN\..\INCLUDE\win32\scdefs.h \
+	C:\SC\BIN\..\INCLUDE\win32\ver.h \
+	C:\SC\BIN\..\INCLUDE\win32\winver.h \
+	C:\SC\BIN\..\MFC\INCLUDE\res\help.cur \
+	C:\SC\BIN\..\MFC\INCLUDE\res\sarrows.cur \
+	C:\SC\BIN\..\MFC\INCLUDE\res\splith.cur \
+	C:\SC\BIN\..\MFC\INCLUDE\res\splitv.cur \
+	C:\SC\BIN\..\MFC\INCLUDE\res\nodrop.cur \
+	C:\SC\BIN\..\MFC\INCLUDE\res\trcknwse.cur \
+	C:\SC\BIN\..\MFC\INCLUDE\res\trcknesw.cur \
+	C:\SC\BIN\..\MFC\INCLUDE\res\trckns.cur \
+	C:\SC\BIN\..\MFC\INCLUDE\res\trckwe.cur \
+	C:\SC\BIN\..\MFC\INCLUDE\res\trck4way.cur \
+	C:\SC\BIN\..\MFC\INCLUDE\res\move4way.cur \
+	C:\SC\BIN\..\MFC\INCLUDE\res\psscroll.bmp \
+	C:\SC\BIN\..\MFC\INCLUDE\res\minifwnd.bmp \
+	C:\SC\BIN\..\MFC\INCLUDE\res\magnify.cur 
